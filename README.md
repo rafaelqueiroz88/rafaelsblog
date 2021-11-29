@@ -208,7 +208,7 @@ Contribuições fazem com que nossas aplicações sejam sempre melhores. Neste c
 4. Envie as atualizações para a Branch (`git push origin feature/AmazingFeature`)
 5. Abra uma Pull Request para enviar suas sugestões de alteração
 
-<a href="#contributing" id="contributing"></a>
+<a href="#license" id="license"></a>
 
 ## Licença
 
