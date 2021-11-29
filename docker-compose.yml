@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+
+  app:
+    build: .
+    container_name: rbapp
+    restart: unless-stopped
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/app
+      - bundle-volume:/usr/local/bundle
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+      - redis
+    env_file:
+      - .env
+
+  sidekiq:
+    build: .
+    container_name: rbsidekiq
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - redis
+    command: bundle exec sidekiq
+    env_file:
+      - .env
+    
+  redis:
+    image: redis
+    container_name: rbredis
+
+  db:
+    image: postgres
+    container_name: rbpostgres
+    volumes:
+      - db-volume:/var/lib/postgresql
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: nopass
+
+volumes:
+  bundle-volume:
+  db-volume:
+  db-data:
+    driver: local

@@ -1,0 +1,4 @@
+template_job:
+  cron: "0 8 * * *"
+  class: "TemplateJob"
+  queue: default

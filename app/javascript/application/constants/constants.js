@@ -1,0 +1,1 @@
+export const AWS_S3 = process.env.AWS_S3
