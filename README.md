@@ -236,3 +236,24 @@ localhost:3000/
 * rafael.qdc88@gmail.com
 * Projeto: [Rafael on Rails](https://github.com/rafaelqueiroz88/rafaelsblog)
 
+<br />
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![GNU License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+[contributors-shield]: https://img.shields.io/github/contributors/rafaelqueiroz88/rafaelsblog.svg?style=for-the-badge
+[contributors-url]: https://github.com/rafaelqueiroz88/rafaelsblog/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/rafaelqueiroz88/rafaelsblog?style=for-the-badge
+[forks-url]: https://github.com/rafaelqueiroz88/rafaelsblog/network/members
+[stars-shield]: https://img.shields.io/github/stars/rafaelqueiroz88/rafaelsblog?style=for-the-badge
+[stars-url]: https://github.com/rafaelqueiroz88/rafaelsblog/stargazers
+[issues-shield]: https://img.shields.io/github/issues/rafaelqueiroz88/rafaelsblog.svg?style=for-the-badge
+[issues-url]: https://github.com/rafaelqueiroz88/rafaelsblog/issues
+[license-shield]: https://img.shields.io/github/license/rafaelqueiroz88/rafaelsblog.svg?style=for-the-badge
+[license-url]: https://github.com/rafaelqueiroz88/rafaelsblog/blob/master/LICENSE
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/rafael-queiroz-0074a4139/
