@@ -44,7 +44,7 @@ const ImageAttacher = (props) => {
         let url = `/api/v1/post/attachment/${uri}`
         axios.patch(url, form)
             .then(r => {
-                console.log(r)
+                history.push(`/`)
             })
             .catch(r => {
                 console.log(r)

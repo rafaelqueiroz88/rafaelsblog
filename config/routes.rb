@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     namespace :v1 do
 
       resources :posts, param: :slug
-      resources :authors, param: :slug, only: [:show]
+      resources :authors, param: :slug, only: [:index, :show]
       resources :newsletters, only: [:create]
 
       match "/post/attachment/:slug", to: "posts#attachment", via: :patch

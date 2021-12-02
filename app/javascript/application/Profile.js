@@ -154,7 +154,7 @@ const Profile = () => {
                         <Col>
                             <ul>
                                 <li>
-                                    Micropower Informática. Tarefas mais comuns: Manutenção, montagem 
+                                    Micropower Informática. Manutenção, montagem 
                                     e desmontagem de micro computadores. A rotina envolvia manutenção, 
                                     suporte técnico e também algumas tarefas de configuração divididas 
                                     entre software, hardware e rede. 
@@ -164,7 +164,7 @@ const Profile = () => {
                                     Março/2012 à Novembro/2012
                                 </li>
                                 <li>
-                                    Equipe Informática. Tarefas mais comuns: Manutenção de micro 
+                                    Equipe Informática. Manutenção de micro 
                                     computadores e alguns outros eletrônicos. A rotina envolvia
                                     manutenção e suporte técnico para os clientes. <br />
                                     Consultoria tecnológica para as empresas locais. <br />
@@ -174,7 +174,7 @@ const Profile = () => {
                                     Novembro/2012 à Setembro/2013
                                 </li>
                                 <li>
-                                    Powertic. Desenvolvedor Junior. Tarefas mais comuns: 
+                                    Powertic. Desenvolvedor Junior.
                                     Desenvolvimento de <em>Plugins</em>
                                     que eram disponibilizados aos clientes que utilizavam WordPress,
                                     desenvolvimento de <em>features</em> para uso interno (normalmente
@@ -189,7 +189,7 @@ const Profile = () => {
                                     Fevereiro/2015 à Julho/2015
                                 </li>
                                 <li>
-                                    Criação Sete. Desenvolvedor Junior. Tarefas mais comuns: 
+                                    Criação Sete. Desenvolvedor Junior.
                                     Desenvolvimento de <em>features</em> para os clientes da agência. <br />
                                     Entre as tarefas desempenhadas, a maior parte do esforço era em 
                                     documentar e reestruturar os sites mais antigos desenvolvidos para 
@@ -198,7 +198,7 @@ const Profile = () => {
                                     Agosto/2015 à Agosto/2018
                                 </li>
                                 <li>
-                                    Hfocus. Desenvolvedor <em>Full Stack</em> Pleno. Tarefas mais comuns:
+                                    Hfocus. Desenvolvedor <em>Full Stack</em> Pleno.
                                     Desenvolvimento de <em>features</em> disponibilizadas no serviço,
                                     confecção de relatórios, correção de <em>bugs</em>, documentação e
                                     engenharia de <em>software</em>. <br />

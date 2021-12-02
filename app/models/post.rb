@@ -6,6 +6,10 @@ class Post < ApplicationRecord
 
     include ImageUploader::Attachment(:photo)
 
+    def set_author(author)
+        self.author_id = author
+    end
+
     def slugify
         puzzle = rand(11111...99999)
         self.slug = "#{title.parameterize}-#{puzzle}"

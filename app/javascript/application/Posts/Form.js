@@ -63,7 +63,7 @@ const Form = (props) => {
             axios.post('/api/v1/posts', post)
                 .then(response => {
                     publishPostAction(response.data)
-                    history.push('/')
+                    history.push(`/publicar/anexar/${response.data.slug}`)
                 })
                 .catch(response => {
                     console.log(response)

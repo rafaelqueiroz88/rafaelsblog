@@ -3,12 +3,11 @@ class PostUpdateWorker
 
     sidekiq_options retry: false
 
-    def perform(slug, title, description, content)
-        post = Post.find_by(slug: slug)
-        if post.update({title: title, description: description, content: content})
-            puts "Success"
+    def perform(post, post_params)
+        if post.update(post_params)
+            post
         else
-            puts "Failed"
+            false
         end
     end
 end
