@@ -17,6 +17,9 @@ Rails.application.routes.draw do
       resources :messages, only: [:index, :create]
 
       match "/post/attachment/:slug", to: "posts#attachment", via: :patch
+
+      post "/login", to: "authentication#login"
+      get "/auto_login", to: "authentication#auto_login"
     end
   end
 

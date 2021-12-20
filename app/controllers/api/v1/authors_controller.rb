@@ -4,6 +4,7 @@ module Api
 
             protect_from_forgery with: :null_session
 
+            before_action :authorized, except: [:show]
             before_action :set_author, only: [:show]
 
             # @get: /authors/:slug
