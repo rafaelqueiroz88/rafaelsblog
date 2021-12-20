@@ -1,11 +1,13 @@
 class Author < ApplicationRecord
 
+    require 'securerandom'
+
     has_many :posts
 
     before_create :slugify
 
     def slugify
-        puzzle = rand(11111...99999)
-        self.slug = "#{name.parameterize}-#{puzzle}"
+        uuid = SecureRandom.uuid
+        self.slug = "#{name.parameterize}-#{uuid}"
     end
 end

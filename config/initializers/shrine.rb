@@ -11,24 +11,20 @@ Shrine.storages = {
     store: Shrine::Storage::FileSystem.new("public", prefix: "uploads")
 }
 
-if Aw.nil?
-    aw = Aw.all
+unless AWS_ACCESS_KEY_ID.nil? || AWS_ACCESS_KEY_ID == ""
     s3_options = nil
+    s3_options = {
+        public: true,
+        bucket: AWS_BUCKET,
+        region: AWS_REGION,
+        access_key_id: AWS_ACCESS_KEY_ID,
+        secret_access_key: AWS_SECRET_ACCESS_KEY
+    }
 
-    if aw.count.positive?
-        s3_options = {
-            public: true,
-            bucket: aw.first.bucket,
-            region: aw.first.region,
-            access_key_id: aw.first.access_key_id,
-            secret_access_key: aw.first.secret_access_key
-        }
-
-        Shrine.storages = {
-            cache: Shrine::Storage::S3.new(upload_options: {acl: 'public-read', cache_control: 'public, max-age=3600'}, **s3_options),
-            store: Shrine::Storage::S3.new(upload_options: {acl: 'public-read', cache_control: 'public, max-age=3600'}, **s3_options),
-        }
-    end
+    Shrine.storages = {
+        cache: Shrine::Storage::S3.new(upload_options: {acl: 'public-read', cache_control: 'public, max-age=3600'}, **s3_options),
+        store: Shrine::Storage::S3.new(upload_options: {acl: 'public-read', cache_control: 'public, max-age=3600'}, **s3_options),
+    }
 end
 
 Shrine.plugin :activerecord 

@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 import NavigationBar from '../layout/NavgationBar'
+// import Chat from '../layout/Chat'
 import Footer from '../layout/Footer'
 import Posts from './Posts'
 import { New as NewPost } from './Posts/New'
@@ -25,6 +26,7 @@ const App = () => {
                 <Route exact path="/publicar/anexar/:slug" component={PostImageAttacher} />
             </Switch>
             <Footer />
+            {/* <Chat /> */}
         </Fragment>
     )
 }

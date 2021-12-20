@@ -1,4 +1,4 @@
-const reducer = (state = {}, action) => {
+const postReducer = (state = {}, action) => {
 
     switch(action.type) {
         case "publish":
@@ -10,4 +10,4 @@ const reducer = (state = {}, action) => {
     }
 }
 
-export default reducer
+export default postReducer

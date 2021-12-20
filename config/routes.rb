@@ -14,10 +14,13 @@ Rails.application.routes.draw do
       resources :posts, param: :slug
       resources :authors, param: :slug, only: [:index, :show]
       resources :newsletters, only: [:create]
+      resources :messages, only: [:index, :create]
 
       match "/post/attachment/:slug", to: "posts#attachment", via: :patch
     end
   end
+
+  mount ActionCable.server => '/cable'
 
   get '*path', to: 'pages#index', via: :all
 

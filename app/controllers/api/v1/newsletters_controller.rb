@@ -17,9 +17,9 @@ module Api
 
             private
 
-            def newsletters_params
-                params.require(:newsletter).permit(:email)
-            end
+                def newsletters_params
+                    params.require(:newsletter).permit(:email)
+                end
         end
     end
 end
