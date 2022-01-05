@@ -2,8 +2,6 @@ require 'rails_helper'
 require 'spec_helper'
 
 RSpec.describe "Posts API", type: :request do
-    
-    # scenario
 
     describe 'GET /posts' do
         it 'Successful get' do
