@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_06_130201) do
+ActiveRecord::Schema.define(version: 2023_02_06_232629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,15 +21,6 @@ ActiveRecord::Schema.define(version: 2021_12_06_130201) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "slug"
-  end
-
-  create_table "aws", force: :cascade do |t|
-    t.string "bucket"
-    t.string "region"
-    t.string "access_key_id"
-    t.string "secret_access_key"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "jobs", force: :cascade do |t|
@@ -62,16 +53,6 @@ ActiveRecord::Schema.define(version: 2021_12_06_130201) do
     t.bigint "author_id", null: false
     t.string "photo_data"
     t.index ["author_id"], name: "index_posts_on_author_id"
-  end
-
-  create_table "senders", force: :cascade do |t|
-    t.string "address"
-    t.string "port"
-    t.string "user_name"
-    t.string "password"
-    t.string "domain"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
   end
 
   add_foreign_key "posts", "authors"
